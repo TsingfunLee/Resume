@@ -1,0 +1,140 @@
+@font-face {
+	font-family: "ruixianti";
+    src: url('../font/ruixianti.ttf') format("truetype");
+}
+
+body{
+	font-family: ruixianti, Arial, sans-serif;
+}
+
+/* 
+ * 1.0 header 
+ */
+header{
+	position: relative;
+}
+
+header .bg{
+	width: 100%;
+	height: 50em;
+	overflow: hidden;
+	position: relative;
+}
+
+header .bg .mask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #000;
+	opacity: 0.15;
+}
+
+header .bg .gradient{
+	background: -webkit-linear-gradient(top, white , black); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(top, white, black); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(top, white, black); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to bottom, white , black); /* 标准的语法（必须放在最后） */
+    opacity: 0.25;
+}
+
+header .bg img{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+header .bg .blur{
+	    filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+    
+    -webkit-filter: blur(5px); /* Chrome, Opera */
+       -moz-filter: blur(5px);
+        -ms-filter: blur(5px);    
+            filter: blur(5px);
+    
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=5, MakeShadow=false); /* IE6~IE9 */
+}
+
+header section .left{
+	position: absolute;
+	left: 22%;
+	top:50%;
+	margin-top: -64px;
+}
+
+header section .left img{
+	width: 128px;
+	height: 128px;
+	border-radius: 50%;
+	border-width: 3px;
+	border-color: whitesmoke;
+	border-style: solid;
+}
+
+header section .right{
+	position: absolute;
+	left: 52%;
+	top: 25%;
+	font-size: 20px;
+	font-size: 2rem;
+	color: white;
+}
+
+header section .bubble{
+	background-color: yellow;
+	padding: 0.5em 0.8em;
+	position: relative;
+	display: inline-block;
+	color: black;
+}
+
+header section .triangle{
+	width: 0;
+	height: 0;
+	border-top: solid yellow 0.5em;
+	border-bottom: solid transparent 0.5em;
+	border-left: solid transparent 0.5em;
+	border-right: solid transparent 0.5em;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+
+header section p{
+	margin-top: 0.8em;
+	margin-bottom: 0.5em;
+	font-size: 26px;
+	font-size: 2.6rem;
+}
+
+header section .line{
+	display: inline-block;
+	width: 100%;
+	height: 3px;
+	background-color: snow;
+}
+
+header section ul{
+	margin-top: 1em;
+	line-height: 200%;
+}
+
+header section ul li a{
+	position: absolute;
+	left: 50%;
+}
+
+header section ul li a[title='前往我的个人主页']{
+	position: static;
+	left: 0;
+}
+
+header section ul li img{
+	vertical-align: middle;
+	margin-left: 1em;
+	animation: bounceHorizontal 1s linear infinite alternate-reverse;
+}
+
