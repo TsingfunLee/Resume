@@ -1,10 +1,23 @@
 @font-face {
-	font-family: "ruixianti";
-    src: url('../font/ruixianti.ttf') format("truetype");
+	font-family: 'ruixianti';
+    src: url('../font/ruixianti.ttf') format('truetype');
 }
 
 body{
-	font-family: ruixianti, Arial, sans-serif;
+	font-family: 'ruixianti', Arial, sans-serif;
+	background-color: #eff0dc;
+}
+::selection{
+	background-color: #ddf0ed;
+	color: white;
+}
+::-moz-selection{
+	background-color: #ddf0ed;
+	color: white;
+}
+::-webkit-selection{
+	background-color: #ddf0ed;
+	color: white;
 }
 
 /* 
@@ -12,11 +25,14 @@ body{
  */
 header{
 	position: relative;
+	overflow-x: hidden;
 }
 
 header .bg{
+	font-size: 1.2em;
 	width: 100%;
-	height: 50em;
+	height: 41.67em;
+	max-height: 500px;
 	overflow: hidden;
 	position: relative;
 }
@@ -41,6 +57,7 @@ header .bg .gradient{
 
 header .bg img{
 	width: 100%;
+	min-width: 980px;
 	height: auto;
 	position: absolute;
 	left: 0;
@@ -69,9 +86,9 @@ header section .left img{
 	width: 128px;
 	height: 128px;
 	border-radius: 50%;
-	border-width: 3px;
-	border-color: whitesmoke;
 	border-style: solid;
+	border-width: 3px;
+	border-color: whitesmoke;	
 }
 
 header section .right{
@@ -106,11 +123,17 @@ header section .triangle{
 header section p{
 	margin-top: 0.8em;
 	margin-bottom: 0.5em;
+	font-family: ruixianti;
 	font-size: 26px;
 	font-size: 2.6rem;
 }
 
-header section .line{
+header section p small{
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+.line{
 	display: inline-block;
 	width: 100%;
 	height: 3px;
@@ -127,7 +150,7 @@ header section ul li a{
 	left: 50%;
 }
 
-header section ul li a[title='前往我的个人主页']{
+header section ul li a[title='go to my personal page']{
 	position: static;
 	left: 0;
 }
@@ -138,3 +161,45 @@ header section ul li img{
 	animation: bounceHorizontal 1s linear infinite alternate-reverse;
 }
 
+/*
+ * 2.0 Works
+ */
+.section1{
+	text-align: center;
+}
+.section1 h2{
+	font-size: 36px;
+	font-size: 3.6rem;
+	letter-spacing: 0.3em;
+	font-weight: 600;
+	margin-top: 2.8em;
+	margin-bottom: 0.28em;
+}
+.section1 .line{
+	width: 15em;
+}
+.section1 .lead{
+	font-size: 26px;
+	font-size: 2.6rem;
+	font-family: Georgia,serif;
+	padding: 0.96em 0 0 0;
+	color: gray;
+}
+.section1 h3{
+	font-size: 28px;
+	font-size: 2.8rem;
+	margin: 1.071em 0;
+}
+.section1 h3 a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.section1 img{
+	
+}
+.section1 p{
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-top: 1.875em;
+	margin-bottom: 3.125em;
+}
