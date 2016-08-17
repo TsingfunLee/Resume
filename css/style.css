@@ -5,19 +5,88 @@
 
 body{
 	font-family: 'ruixianti', Arial, sans-serif;
-	background-color: #eff0dc;
+	background-color: #D9D6CF;
 }
 ::selection{
-	background-color: #ddf0ed;
+	background-color: #ccccff;
 	color: white;
 }
 ::-moz-selection{
-	background-color: #ddf0ed;
+	background-color: #CCCCFF;
 	color: white;
 }
 ::-webkit-selection{
-	background-color: #ddf0ed;
+	background-color: #CCCCFF;
 	color: white;
+}
+
+/*
+ * 0.0 common
+ */
+.line{
+	display: inline-block;
+	width: 100%;
+	height: 3px;
+	background-color: snow;
+}
+
+.lead{
+	font-size: 26px !important;
+	font-size: 2.6rem !important;
+	font-family: Georgia,serif;
+	padding: 0.5em 0 0 0;
+	color: gray;
+}
+
+.tag{
+	background-color: #43785b;
+	padding: 2px 5px;
+	margin: 0 5px;
+	border-radius: 5px;
+	color: white;
+	opacity: 0.5;
+}
+.tag:hover{
+	opacity: 1;
+	cursor: default;
+}
+
+.box{
+	border-radius: 1.8em;
+	width: 18em;
+	height: 18em;
+	color: white;
+	box-sizing: border-box;
+	padding: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.small-box{
+    height: 10em;
+}
+
+/*
+ * 0.1 color
+ */
+.darkgreen{
+	background-color: #70a19f;
+}
+.lightblue{
+	background-color: #81c2d6;
+}
+.darkblue{
+	background-color: #8192d6;
+}
+.yellow{
+	background-color: #ffe957;
+}
+.purple{
+	background-color: #b9d3e6;
+}
+.yellowgreen{
+	background-color: #dcf1a7;
 }
 
 /* 
@@ -26,6 +95,7 @@ body{
 header{
 	position: relative;
 	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 header .bg{
@@ -133,13 +203,6 @@ header section p small{
 	font-size: 1.8rem;
 }
 
-.line{
-	display: inline-block;
-	width: 100%;
-	height: 3px;
-	background-color: snow;
-}
-
 header section ul{
 	margin-top: 1em;
 	line-height: 200%;
@@ -172,34 +235,40 @@ header section ul li img{
 	font-size: 3.6rem;
 	letter-spacing: 0.3em;
 	font-weight: 600;
-	margin-top: 2.8em;
+	padding-top: 2.8em;
 	margin-bottom: 0.28em;
 }
 .section1 .line{
 	width: 15em;
 }
-.section1 .lead{
-	font-size: 26px;
-	font-size: 2.6rem;
-	font-family: Georgia,serif;
-	padding: 0.96em 0 0 0;
-	color: gray;
-}
+
 .section1 h3{
 	font-size: 28px;
 	font-size: 2.8rem;
 	margin: 1.071em 0;
 }
-.section1 h3 a:hover{
-	text-decoration: underline;
-	cursor: pointer;
-}
-.section1 img{
-	
+
+.section1 img[alt='Monopoly']{
+	width: 250px;
 }
 .section1 p{
 	font-size: 16px;
 	font-size: 1.6rem;
 	margin-top: 1.875em;
-	margin-bottom: 3.125em;
+	margin-bottom: 1.875em;
+	line-height: 150%;
+}
+
+/*
+ * 3.0 skills
+ */
+.fluid-box li{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* 4.0 about*/
+.section1 .weight{
+	font-size: 28px;
+	font-size: 2.8rem;
 }
