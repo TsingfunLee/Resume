@@ -1,10 +1,5 @@
-@font-face {
-	font-family: 'ruixianti';
-    src: url('../font/ruixianti.ttf') format('truetype');
-}
-
 body{
-	font-family: 'ruixianti', Arial, sans-serif;
+	font-family: "microsoft yahei", Arial, sans-serif;
 	background-color: #D9D6CF;
 }
 ::selection{
@@ -227,10 +222,11 @@ header section ul li img{
 /*
  * 2.0 Works
  */
-.section1{
+.section{
 	text-align: center;
+	display: block;
 }
-.section1 h2{
+.section h2{
 	font-size: 36px;
 	font-size: 3.6rem;
 	letter-spacing: 0.3em;
@@ -238,20 +234,19 @@ header section ul li img{
 	padding-top: 2.8em;
 	margin-bottom: 0.28em;
 }
-.section1 .line{
+.section .line{
 	width: 15em;
 }
 
-.section1 h3{
+.section h3{
 	font-size: 28px;
 	font-size: 2.8rem;
-	margin: 1.071em 0;
 }
 
-.section1 img[alt='Monopoly']{
+.section img[alt='Monopoly']{
 	width: 250px;
 }
-.section1 p{
+.section p{
 	font-size: 16px;
 	font-size: 1.6rem;
 	margin-top: 1.875em;
@@ -267,8 +262,25 @@ header section ul li img{
 	vertical-align: middle;
 }
 
-/* 4.0 about*/
-.section1 .weight{
+/* 
+ * 4.0 about
+ */
+.section .weight{
 	font-size: 28px;
 	font-size: 2.8rem;
 }
+.link a{
+	margin: 0 10px;
+}
+
+/*
+ * 5.0 svg icon
+ */
+.icon{
+	width: 32px;
+	height: 32px;
+}
+.icon:hover{
+	fill: cornflowerblue;
+}
+
