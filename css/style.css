@@ -130,14 +130,9 @@ header .bg img{
 }
 
 header .bg .blur{
-	    filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
     
-    -webkit-filter: blur(5px); /* Chrome, Opera */
-       -moz-filter: blur(5px);
-        -ms-filter: blur(5px);    
-            filter: blur(5px);
+    /*-webkit-filter: blur(5px); /* Chrome, Opera */ 
     
-    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=5, MakeShadow=false); /* IE6~IE9 */
 }
 
 header section .left{
