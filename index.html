@@ -14,6 +14,15 @@
 		<link rel="stylesheet" type="text/css" href="css/animate.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="css/@media.css" media="screen" />
+		<script>
+			// Carousal Pictures
+			window.onload = function() {
+				var index = Math.ceil(Math.random() * 5);
+				if(index != 1) {
+					document.getElementById('head-img').src = 'img/header_' + index + '.jpg';
+				}
+			}
+		</script>
 	</head>
 
 	<body>
@@ -71,7 +80,7 @@
 			<section>
 				<ul>
 					<li>
-						<h3><a href="javascript:void()">Visualization of Sorting Algorithms</a></h3>
+						<h3><a href="http://htmlpreview.github.io/https://github.com/TsingfunLee/BaiduFrontendCollege/blob/master/task_2_19/index.html">Visualization of Sorting Algorithms</a></h3>
 						<p>Visualization of Sorting Algorithms, such as Bubble Sorting, Insertion Sorting, Quick Sorting and so on.</p>
 						<p><span class="tag">Algorithms</span><span class="tag">DOM</span><span class="tag">JavaScript</span><span class="tag">Data-Visualization</span></p>
 						<img src="img/sorting.gif" alt="Visualization of Sorting Algorithms">

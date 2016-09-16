@@ -1,10 +1,4 @@
-// Carousal Pictures
-window.onload=function(){
-	var index = Math.ceil(Math.random()*5);
-	if(index!=1){
-		document.getElementById('head-img').src='img/header_'+index+'.jpg';
-	}	
-}
+
 // Blur Effect By Mouse
 document.getElementsByTagName('header')[0].onmouseenter=function(){
 	document.getElementById('head-img').className='';
