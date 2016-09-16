@@ -14,15 +14,6 @@
 		<link rel="stylesheet" type="text/css" href="css/animate.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="css/@media.css" media="screen" />
-		<script>
-			// Carousal Pictures
-			window.onload = function() {
-				var index = Math.ceil(Math.random() * 5);
-				if(index != 1) {
-					document.getElementById('head-img').src = 'img/header_' + index + '.jpg';
-				}
-			}
-		</script>
 	</head>
 
 	<body>
@@ -40,7 +31,16 @@
 
 		<header>
 			<div class="bg">
-				<img src="" alt="background" class="blur" id="head-img">
+				<img src="img/header_1.jpg" alt="background" class="blur" id="head-img">
+				<script>
+					// Carousal Pictures
+					window.onload = function() {
+						var index = Math.ceil(Math.random() * 5);
+						if(index != 1) {
+							document.getElementById('head-img').src = 'img/header_' + index + '.jpg';
+						}
+					}
+				</script>
 				<div class="mask"></div>
 			</div>
 			<section>
