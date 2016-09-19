@@ -144,14 +144,14 @@ header{
     
 }
 
-header section .left {
+.left {
 	position: absolute;
 	left: 22%;
 	top:50%;
 	margin-top: -64px;
 }
 
-header section .left img{
+.left img{
 	width: 128px;
 	height: 128px;
 	border-radius: 50%;
@@ -160,7 +160,7 @@ header section .left img{
 	border-color: whitesmoke;	
 }
 
-header section .right{
+.right{
 	position: absolute;
 	left: 52%;
 	top: 25%;
@@ -169,7 +169,7 @@ header section .right{
 	color: white;
 }
 
-header section .bubble{
+.bubble{
 	background-color: yellow;
 	padding: 0.5em 0.8em;
 	position: relative;
@@ -177,7 +177,7 @@ header section .bubble{
 	color: black;
 }
 
-header section .triangle{
+.triangle{
 	width: 0;
 	height: 0;
 	border-top: solid yellow 0.5em;
