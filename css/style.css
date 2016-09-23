@@ -296,3 +296,35 @@ header section ul li img{
 	fill: cornflowerblue;
 }
 
+/*
+ * 6.0 nav
+ */
+.nav{
+	font-size: 18px;
+	font-size: 1.8rem;
+	width: 100%;
+	height: 2.3em;
+	background-color: white;
+	color: #34352C;
+	position: fixed;
+	top: 0;
+	display: none;
+	opacity: 0.9;
+	overflow: hidden;
+	z-index: 10;
+}
+.slideDown{
+	animation: slideDown 0.5s ease-out;
+}
+.nav ul{
+	height: 100%;
+}
+.nav li{
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+	line-height: 2.3em;
+}
+.nav li a:hover{
+	text-decoration: none;
+}

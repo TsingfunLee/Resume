@@ -1,3 +1,4 @@
+/* Arrow */
 @keyframes bounceHorizontal{
 	0%{
 		transform: translateX(0px);
@@ -15,17 +16,88 @@
 		transform: translateX(0px);
 	}
 }
-/*@-moz-keyframes bounceHorizontal{
-		0%{
+@-moz-keyframes bounceHorizontal{
+	0%{
 		transform: translateX(0px);
 	}
 	25%{
-		transform: translateX(-5px);
-	}
-	75%{
-		transform: translateX(0px);
-	}
-	100%{
 		transform: translateX(5px);
 	}
-}*/
+	50%{
+		transform: translateX(0px);
+	}
+	75%{
+		transform: translateX(-5px);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
+@-ms-keyframes bounceHorizontal{
+	0%{
+		transform: translateX(0px);
+	}
+	25%{
+		transform: translateX(5px);
+	}
+	50%{
+		transform: translateX(0px);
+	}
+	75%{
+		transform: translateX(-5px);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
+@-webkit-keyframes bounceHorizontal{
+	0%{
+		transform: translateX(0px);
+	}
+	25%{
+		transform: translateX(5px);
+	}
+	50%{
+		transform: translateX(0px);
+	}
+	75%{
+		transform: translateX(-5px);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
+
+/* Navigation */
+@keyframes slideDown{
+	from{
+		height: 0;
+	}
+	to{
+		height: 2.3em;
+	}
+}
+@-webkit-keyframes slideDown{
+	from{
+		height: 0;
+	}
+	to{
+		height: 2.3em;
+	}
+}
+@-moz-keyframes slideDown{
+	from{
+		height: 0;
+	}
+	to{
+		height: 2.3em;
+	}
+}
+@-ms-keyframes slideDown{
+	from{
+		height: 0;
+	}
+	to{
+		height: 2.3em;
+	}
+}

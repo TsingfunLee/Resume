@@ -57,5 +57,5 @@ a{
 }
 a:hover{
 	text-decoration: underline;
-	cursor: po;
+	cursor: pointer;
 }
