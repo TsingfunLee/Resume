@@ -31,9 +31,13 @@
 		if(scrollHeight >= bgHeight) {
 			nav.style.display = 'block';
 			nav.classList.add('slideDown');
+			nav.classList.remove('slideUp');
 		} else {
-			nav.style.display = 'none';
 			nav.classList.remove('slideDown');
+			nav.classList.add('slideUp');
+			setTimeout(function() {
+				nav.style.display = 'none';
+			}, 500);
 		}
 	}
 

@@ -316,6 +316,9 @@ header section ul li img{
 .slideDown{
 	animation: slideDown 0.5s ease-out;
 }
+.slideUp{
+	animation: slideUp 0.5s ease-in;
+}
 .nav ul{
 	height: 100%;
 }

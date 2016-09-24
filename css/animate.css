@@ -101,3 +101,12 @@
 		height: 2.3em;
 	}
 }
+
+@keyframes slideUp{
+	from{
+		height: 2.3em;
+	}
+	to{
+		height: 0;
+	}
+}
