@@ -28,7 +28,7 @@
 
 	function onMouseWheel() { /*当鼠标滚轮事件发生时，执行一些操作*/
 		var scrollHeight = getScrollHeight();
-		if(scrollHeight >= bgHeight) {
+		if(scrollHeight > bgHeight) {
 			nav.style.display = 'block';
 			nav.classList.add('slideDown');
 			nav.classList.remove('slideUp');

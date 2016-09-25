@@ -1,24 +1,32 @@
-body{
+body {
 	font-family: "microsoft yahei", Arial, sans-serif;
 	background-color: #D9D6CF;
 }
-::selection{
+
+::selection {
 	background-color: #ccccff;
 	color: white;
 }
-::-moz-selection{
-	background-color: #CCCCFF;
-	color: white;
-}
-::-webkit-selection{
+
+::-moz-selection {
 	background-color: #CCCCFF;
 	color: white;
 }
 
+::-webkit-selection {
+	background-color: #CCCCFF;
+	color: white;
+}
+
+
 /*
  * 0.0 common
  */
-.line::after{
+.no-underline:hover{
+	text-decoration: none;
+}
+
+.line::after {
 	content: "";
 	display: block;
 	width: 100%;
@@ -30,15 +38,27 @@ body{
 	background-color: snow;
 }
 
-.lead{
+.separator::after{
+	content: "|";
+	padding: 0.5em;
+	text-decoration: none;
+	vertical-align: text-top;
+}
+
+.body{
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+.lead {
 	font-size: 26px !important;
 	font-size: 2.6rem !important;
-	font-family: Georgia,serif;
+	font-family: Georgia, serif;
 	padding: 0.5em 0 0 0;
 	color: gray;
 }
 
-.tag{
+.tag {
 	background-color: #43785b;
 	padding: 2px 5px;
 	margin: 0 5px;
@@ -46,12 +66,13 @@ body{
 	color: white;
 	opacity: 0.5;
 }
-.tag:hover{
+
+.tag:hover {
 	opacity: 1;
 	cursor: default;
 }
 
-.box{
+.box {
 	border-radius: 1.8em;
 	width: 15em;
 	height: 15em;
@@ -64,45 +85,56 @@ body{
 	margin-bottom: 5px;
 	opacity: 0.5;
 }
-.box:hover{
+
+.box:hover {
 	opacity: 1;
 }
-.small-box{
-    height: 7em;
+
+.small-box {
+	height: 7em;
 }
+
 
 /*
  * 0.1 color
  */
-.darkgreen{
+
+.darkgreen {
 	background-color: #70a19f;
 }
-.lightblue{
+
+.lightblue {
 	background-color: #81c2d6;
 }
-.darkblue{
+
+.darkblue {
 	background-color: #8192d6;
 }
-.yellow{
+
+.yellow {
 	background-color: #ffe957;
 }
-.purple{
+
+.purple {
 	background-color: #b9d3e6;
 }
-.yellowgreen{
+
+.yellowgreen {
 	background-color: #dcf1a7;
 }
+
 
 /* 
  * 1.0 header 
  */
-header{
+
+header {
 	position: relative;
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
 
-.bg{
+.bg {
 	font-size: 1.2em;
 	width: 100%;
 	height: 41.67em;
@@ -111,7 +143,7 @@ header{
 	position: relative;
 }
 
-.mask{
+.mask {
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -121,15 +153,19 @@ header{
 	opacity: 0.15;
 }
 
-.gradient{
-	background: -webkit-linear-gradient(top, white , black); /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(top, white, black); /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(top, white, black); /* Firefox 3.6 - 15 */
-    background: linear-gradient(to bottom, white , black); /* 标准的语法（必须放在最后） */
-    opacity: 0.25;
+.gradient {
+	background: -webkit-linear-gradient(top, white, black);
+	/* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(top, white, black);
+	/* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(top, white, black);
+	/* Firefox 3.6 - 15 */
+	background: linear-gradient(to bottom, white, black);
+	/* 标准的语法（必须放在最后） */
+	opacity: 0.25;
 }
 
-#head-img{
+#head-img {
 	width: 100%;
 	min-width: 980px;
 	height: auto;
@@ -139,28 +175,27 @@ header{
 }
 
 .blur {
-    
-    -webkit-filter: blur(5px); /* Chrome, Opera */ 
-    
+	-webkit-filter: blur(5px);
+	/* Chrome, Opera */
 }
 
 .left {
 	position: absolute;
 	left: 22%;
-	top:50%;
+	top: 50%;
 	margin-top: -64px;
 }
 
-.left img{
+.left img {
 	width: 128px;
 	height: 128px;
 	border-radius: 50%;
 	border-style: solid;
 	border-width: 3px;
-	border-color: whitesmoke;	
+	border-color: whitesmoke;
 }
 
-.right{
+.right {
 	position: absolute;
 	left: 52%;
 	top: 25%;
@@ -169,7 +204,7 @@ header{
 	color: white;
 }
 
-.bubble{
+.bubble {
 	background-color: yellow;
 	padding: 0.5em 0.8em;
 	position: relative;
@@ -177,7 +212,7 @@ header{
 	color: black;
 }
 
-.triangle{
+.triangle {
 	width: 0;
 	height: 0;
 	border-top: solid yellow 0.5em;
@@ -189,7 +224,7 @@ header{
 	left: 0;
 }
 
-header section p{
+header section p {
 	margin-top: 0.8em;
 	margin-bottom: 0.5em;
 	font-family: ruixianti;
@@ -197,40 +232,43 @@ header section p{
 	font-size: 2.6rem;
 }
 
-header section p small{
+header section p small {
 	font-size: 18px;
 	font-size: 1.8rem;
 }
 
-header section ul{
+header section ul {
 	margin-top: 1em;
 	line-height: 200%;
 }
 
-header section ul li a{
+header section ul li a {
 	position: absolute;
 	left: 50%;
 }
 
-header section ul li a[title='go to my personal page']{
+header section ul li a[title='go to my personal page'] {
 	position: static;
 	left: 0;
 }
 
-header section ul li img{
+header section ul li img {
 	vertical-align: middle;
 	margin-left: 1em;
 	animation: bounceHorizontal 1s linear infinite alternate-reverse;
 }
 
+
 /*
  * 2.0 Works
  */
-.section{
+
+.section {
 	text-align: center;
 	display: block;
 }
-.section h2{
+
+.section h2 {
 	font-size: 36px;
 	font-size: 3.6rem;
 	letter-spacing: 0.3em;
@@ -240,21 +278,22 @@ header section ul li img{
 	display: inline-block;
 }
 
-.section h3{
+.section h3 {
 	font-size: 28px;
 	font-size: 2.8rem;
 }
 
-.section img[alt='Visualization of Sorting Algorithms']{
+.section img[alt='Visualization of Sorting Algorithms'] {
 	width: 674px;
 	height: 328px;
 	margin-bottom: 2em;
 }
 
-.section img[alt='Monopoly']{
+.section img[alt='Monopoly'] {
 	width: 250px;
 }
-.section p{
+
+.section p {
 	font-size: 16px;
 	font-size: 1.6rem;
 	margin-top: 1.875em;
@@ -262,44 +301,55 @@ header section ul li img{
 	line-height: 150%;
 }
 
+
 /*
  * 3.0 skills
  */
-.fluid-box li{
+
+.fluid-box li {
 	display: inline-block;
 	vertical-align: middle;
 }
-.section .box h3{
+
+.section .box h3 {
 	font-size: 22px;
 	font-size: 2.2rem;
 }
 
+
 /* 
  * 4.0 about
  */
-.section .weight{
+
+.section .weight {
 	font-size: 28px;
 	font-size: 2.8rem;
 }
-.link a{
+
+.link a {
 	margin: 0 10px;
 }
+
 
 /*
  * 5.0 svg icon
  */
-.icon{
+
+.icon {
 	width: 32px;
 	height: 32px;
 }
-.icon:hover{
+
+.icon:hover {
 	fill: cornflowerblue;
 }
+
 
 /*
  * 6.0 nav
  */
-.nav{
+
+.nav {
 	font-size: 18px;
 	font-size: 1.8rem;
 	width: 100%;
@@ -313,21 +363,48 @@ header section ul li img{
 	overflow: hidden;
 	z-index: 10;
 }
-.slideDown{
+
+.slideDown {
 	animation: slideDown 0.5s ease-out;
 }
-.slideUp{
+
+.slideUp {
 	animation: slideUp 0.5s ease-in;
 }
-.nav ul{
+
+.nav ul {
 	height: 100%;
 }
-.nav li{
+
+.nav li {
 	display: inline-block;
 	width: 33%;
 	text-align: center;
 	line-height: 2.3em;
 }
-.nav li a:hover{
+
+.nav li a:hover {
 	text-decoration: none;
+}
+
+
+/*
+ * 7.0 Top
+ */
+
+.fixed {
+	position: fixed;
+	top: 90%;
+}
+
+.fixed-right {
+	right: 5%;
+}
+
+.fixed-left {
+	left: 5%;
+}
+
+.fixed:hover {
+	cursor: pointer;
 }
