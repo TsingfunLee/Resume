@@ -39,10 +39,14 @@ body {
 }
 
 .separator::after{
-	content: "|";
-	padding: 0.5em;
-	text-decoration: none;
-	vertical-align: text-top;
+	content: "";
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	background-color: white;
+	width: 1px;
+	height: 1em;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .body{
@@ -175,6 +179,8 @@ header {
 }
 
 .blur {
+	
+	filter: blur(5px);
 	-webkit-filter: blur(5px);
 	/* Chrome, Opera */
 }
@@ -407,4 +413,12 @@ header section ul li img {
 
 .fixed:hover {
 	cursor: pointer;
+}
+
+.flyIn{
+	animation: flyIn 1s ease-out;
+}
+
+.fadeOut{
+	animation: fadeOut 1s ease-out;
 }

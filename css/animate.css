@@ -110,3 +110,26 @@
 		height: 0;
 	}
 }
+
+/*
+ * Top
+ */
+@keyframes flyIn{
+	from{
+		top: 70%;
+		opacity: 0;
+	}
+	to{
+		top: 90%;
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
