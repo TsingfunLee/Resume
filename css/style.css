@@ -58,8 +58,15 @@ body {
 	font-size: 26px !important;
 	font-size: 2.6rem !important;
 	font-family: Georgia, serif;
-	padding: 0.5em 0 0 0;
+	margin: 1.5em 0 1.5em 0;
 	color: gray;
+}
+
+.weight {
+	font-size: 28px;
+	font-size: 2.8rem;
+	margin: 1.5em 0 1.5em 0;
+    line-height: 150%;
 }
 
 .tag {
@@ -299,9 +306,7 @@ header section ul li img {
 	width: 250px;
 }
 
-.section p {
-	font-size: 16px;
-	font-size: 1.6rem;
+.section .body {
 	margin-top: 1.875em;
 	margin-bottom: 1.875em;
 	line-height: 150%;
@@ -326,11 +331,6 @@ header section ul li img {
 /* 
  * 4.0 about
  */
-
-.section .weight {
-	font-size: 28px;
-	font-size: 2.8rem;
-}
 
 .link a {
 	margin: 0 10px;
